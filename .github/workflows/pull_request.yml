@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [opened, reopened]
   workflow_dispatch:
+  push:
+    tags:
+      - 'v*' 
 
 jobs: 
   check_code:
