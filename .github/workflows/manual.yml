@@ -1,7 +1,9 @@
 name: Manually triggered workflow
 on: 
   workflow_dispatch:
-  
+  push:
+    tags:
+      - 'v*'  
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
